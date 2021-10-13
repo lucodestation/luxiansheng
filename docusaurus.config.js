@@ -23,6 +23,21 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
+  i18n: {
+    defaultLocale: 'zh-cn',
+    locales: ['en', 'zh-cn'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      'zh-cn': {
+        label: '中文（中国）',
+        direction: 'ltr',
+      },
+    },
+  },
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -31,13 +46,13 @@ module.exports = {
           // 文档侧边栏
           sidebarPath: require.resolve('./sidebars.js'),
           // 文档底部的编辑此页
-          // editUrl: 'https://github.com/lucodestation/luxiansheng/edit/main/website/',
+          editUrl: 'https://github.com/lucodestation/luxiansheng/blob/main/',
         },
         blog: {
           // 显示阅读时间
           showReadingTime: true,
           // 博客底部的编辑此页
-          // editUrl: 'https://github.com/lucodestation/luxiansheng/edit/main/website/blog/',
+          editUrl: 'https://github.com/lucodestation/luxiansheng/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -51,7 +66,7 @@ module.exports = {
       title: '卢先生',
       logo: {
         alt: 'logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         // 文档
@@ -121,7 +136,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Powered by <a href="https://www.docusaurus.cn/" target="_blank">Docusaurus</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} Powered by <a href="https://docusaurus.io/zh-CN/" target="_blank">Docusaurus</a>`,
     },
     prism: {
       theme: lightCodeTheme,

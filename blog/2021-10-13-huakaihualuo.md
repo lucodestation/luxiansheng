@@ -1,5 +1,4 @@
 ---
-slug: huakaihualuo
 title: 花开花落
 authors: luzhongwei
 tags: [你好, 呵呵]
@@ -10,3 +9,9 @@ tags: [你好, 呵呵]
 <!--truncate-->
 
 更多内容
+
+```js
+const obj = {
+  foo: 'bar',
+};
+```
