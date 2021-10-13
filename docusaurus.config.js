@@ -1,114 +1,134 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-// With JSDoc @type annotations, IDEs can provide config autocompletion
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-(module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+module.exports = {
+  // 网站标题
+  title: '卢先生',
+  // 网站标语/子标题
+  tagline: '卢先生的个人网站',
+  // 如果要将网站部署到 https://xxx.github.io/repository-name
+  // 应该设置为 https://xxx.github.io
+  url: 'https://xxx.com',
+  // 如果要将网站部署到 https://xxx.github.io/repository-name
+  // /repository-name/
   baseUrl: '/',
+  // GitHub 用户名或组织
+  // organizationName: "username",
+  // GitHub 仓库名称
+  // projectName: "repository-name",
+  // 如果要将网站部署到 GitHub Pages
+  // 建议设置成 true 或 false
+  // trailingSlash: undefined,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
 
   presets: [
     [
       '@docusaurus/preset-classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
+          // 文档侧边栏
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          // 文档底部的编辑此页
+          // editUrl: 'https://github.com/lucodestation/luxiansheng/edit/main/website/',
         },
         blog: {
+          // 显示阅读时间
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+          // 博客底部的编辑此页
+          // editUrl: 'https://github.com/lucodestation/luxiansheng/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+  themeConfig: {
+    navbar: {
+      title: '卢先生',
+      logo: {
+        alt: 'logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        // 文档
+        {
+          type: 'doc',
+          // 文档 ID ，必须项。
+          // 当点击导航栏上的“文档”时默认显示的页面
+          docId: 'document1',
+          position: 'left',
+          label: '文档',
         },
-        items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
-});
+        // 博客
+        { to: '/blog', label: '博客', position: 'left' },
+        // 独立页面
+        {
+          to: '/about',
+          label: '关于我们',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/lucodestation/luxiansheng',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: '文档',
+          items: [
+            {
+              label: '文档1',
+              to: '/docs/document1',
+            },
+          ],
+        },
+        {
+          title: '社区',
+          items: [
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/docusaurus',
+            },
+          ],
+        },
+        {
+          title: '更多',
+          items: [
+            {
+              label: '博客',
+              to: '/blog',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/lucodestation/luxiansheng',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Powered by <a href="https://www.docusaurus.cn/" target="_blank">Docusaurus</a>`,
+    },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+  },
+
+  // 自定义配置
+  customFields: {},
+};
