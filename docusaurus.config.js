@@ -58,6 +58,7 @@ module.exports = {
   ],
 
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       title: '首页',
       hideOnScroll: true,
