@@ -60,23 +60,12 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: '首页',
+      hideOnScroll: true,
       logo: {
         alt: 'logo',
         src: 'img/logo.png',
       },
       items: [
-        {
-          type: 'dropdown',
-          label: 'Community',
-          position: 'left',
-          items: [
-            {
-              label: 'Facebook',
-              href: 'https://www.facebook.com',
-            },
-            // ... more items
-          ],
-        },
         // 文档
         {
           type: 'doc',
