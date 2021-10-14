@@ -9,6 +9,8 @@
 
 下载地址 [搜狗拼音输入法 11.2 正式版 | 阿里云盘](https://www.aliyundrive.com/s/8P2ZtPNuNob) 或到 [官网](https://pinyin.sogou.com/) 下载最新版。
 
+<!--truncate-->
+
 ## 安装
 
 一直下一步即可安装完成。
