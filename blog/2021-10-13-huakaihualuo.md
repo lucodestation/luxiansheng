@@ -12,6 +12,6 @@ tags: [你好, 呵呵]
 
 ```js
 const obj = {
-  foo: 'bar',
+  foo: 'bar'
 };
 ```

@@ -10,7 +10,7 @@ function About() {
           justifyContent: 'center',
           alignItems: 'center',
           height: '50vh',
-          fontSize: '20px',
+          fontSize: '20px'
         }}
       >
         <p>这是 React 独立页面。</p>

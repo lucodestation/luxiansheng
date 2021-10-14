@@ -1,5 +1,5 @@
 ---
-title: VSCode ESLint Prettier Vetur
+title: 配置 VSCode ESLint Prettier Vetur
 authors: luzhongwei
 tags: [编辑器, VSCode, ESLint, Prettier, Vetur, Vue]
 ---
