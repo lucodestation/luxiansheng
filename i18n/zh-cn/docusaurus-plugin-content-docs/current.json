@@ -1,14 +1,1 @@
-{
-  "version.label": {
-    "message": "Next",
-    "description": "The label for version current"
-  },
-  "sidebar.tutorialSidebar.category.文档集1": {
-    "message": "文档集1",
-    "description": "The label for category 文档集1 in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.文档集2": {
-    "message": "文档集2",
-    "description": "The label for category 文档集2 in sidebar tutorialSidebar"
-  }
-}
+{}

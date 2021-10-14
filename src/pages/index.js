@@ -21,7 +21,7 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout description="网站描述">
+    <Layout title="首页" description="网站描述">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

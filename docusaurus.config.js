@@ -25,12 +25,8 @@ module.exports = {
 
   i18n: {
     defaultLocale: 'zh-cn',
-    locales: ['en', 'zh-cn'],
+    locales: ['zh-cn'],
     localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-      },
       'zh-cn': {
         label: '中文（中国）',
         direction: 'ltr',
@@ -63,12 +59,24 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: '卢先生',
+      title: '首页',
       logo: {
         alt: 'logo',
         src: 'img/logo.png',
       },
       items: [
+        {
+          type: 'dropdown',
+          label: 'Community',
+          position: 'left',
+          items: [
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com',
+            },
+            // ... more items
+          ],
+        },
         // 文档
         {
           type: 'doc',
@@ -97,28 +105,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
+          title: '友情链接',
+          items: [{ label: '张鑫旭博客', href: 'https://www.zhangxinxu.com/' }],
+        },
+        {
           title: '文档',
           items: [
             {
               label: '文档1',
               to: '/docs/document1',
-            },
-          ],
-        },
-        {
-          title: '社区',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
             },
           ],
         },
