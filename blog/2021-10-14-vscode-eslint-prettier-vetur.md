@@ -8,10 +8,10 @@ tags: [编辑器, VSCode, ESLint, Prettier, Vetur, Vue]
 
 <!--truncate-->
 
-## 安装 eslint 依赖包
+## 安装 eslint 和 prettier 依赖包
 
 ```bash
-npm install --save-dev eslint
+npm install --save-dev eslint prettier
 ```
 
 ## 安装 VSCode 插件

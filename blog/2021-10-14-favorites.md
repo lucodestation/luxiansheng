@@ -16,6 +16,10 @@ tags: [收藏, 网址, 网站]
   - https://carbon.now.sh/
 - 文本转语音（微软）
   - https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/#features
+- Can I Use
+  - https://caniuse.com/
+- CDN
+  - https://www.bootcdn.cn/
 
 ## 视频网站
 
