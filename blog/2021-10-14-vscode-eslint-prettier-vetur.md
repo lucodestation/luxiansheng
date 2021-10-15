@@ -1,7 +1,7 @@
 ---
-title: 配置 VSCode ESLint Prettier Vetur
+title: 配置 VSCode ESLint Prettier Vetur JSX
 authors: luzhongwei
-tags: [编辑器, VSCode, ESLint, Prettier, Vetur, Vue]
+tags: [编辑器, VSCode, ESLint, Prettier, Vetur, Vue, React, JSX]
 ---
 
 使用 VSCode、ESLint、Prettier、Vetur 规范你的代码。
@@ -128,4 +128,26 @@ module.exports = {
   // 设为 true 后就不提示 Vetur can't find tsconfig.json, jsconfig.json in /xxxx/xxxxxx. 了
   "vetur.ignoreProjectWarning": true
 }
+```
+
+## 识别 React
+
+安装 `eslint-plugin-react` 。
+
+```bash
+npm install --save-dev eslint-plugin-react
+```
+
+配置 `.eslintrc.js` 。
+
+```js
+module.exports = {
+  ...,
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended'
+  ],
+  ...
+};
+
 ```
