@@ -151,3 +151,14 @@ module.exports = {
 };
 
 ```
+
+配置 VSCode
+
+```json
+{
+  "files.associations": {
+    // 配置 js 文件关联为 react 的 jsx
+    "*.js": "javascriptreact"
+  }
+}
+```

@@ -29,9 +29,9 @@ module.exports = {
     localeConfigs: {
       'zh-cn': {
         label: '中文（中国）',
-        direction: 'ltr',
-      },
-    },
+        direction: 'ltr'
+      }
+    }
   },
 
   presets: [
@@ -42,19 +42,19 @@ module.exports = {
           // 文档侧边栏
           sidebarPath: require.resolve('./sidebars.js'),
           // 文档底部的编辑此页
-          editUrl: 'https://github.com/lucodestation/luxiansheng/blob/main/',
+          editUrl: 'https://github.com/lucodestation/luxiansheng/blob/main/'
         },
         blog: {
           // 显示阅读时间
           showReadingTime: true,
           // 博客底部的编辑此页
-          editUrl: 'https://github.com/lucodestation/luxiansheng/blob/main/',
+          editUrl: 'https://github.com/lucodestation/luxiansheng/blob/main/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
+          customCss: require.resolve('./src/css/custom.css')
+        }
+      }
+    ]
   ],
 
   themeConfig: {
@@ -64,7 +64,7 @@ module.exports = {
       hideOnScroll: true,
       logo: {
         alt: 'logo',
-        src: 'img/logo.png',
+        src: 'img/logo.png'
       },
       items: [
         // 文档
@@ -74,7 +74,7 @@ module.exports = {
           // 当点击导航栏上的“文档”时默认显示的页面
           docId: 'document1',
           position: 'left',
-          label: '文档',
+          label: '文档'
         },
         // 博客
         { to: '/blog', label: '博客', position: 'left' },
@@ -82,53 +82,63 @@ module.exports = {
         {
           to: '/about',
           label: '关于我们',
-          position: 'left',
+          position: 'left'
         },
         {
           href: 'https://github.com/lucodestation/luxiansheng',
           label: 'GitHub',
-          position: 'right',
-        },
-      ],
+          position: 'right'
+        }
+      ]
     },
     footer: {
       style: 'dark',
       links: [
         {
           title: '友情链接',
-          items: [{ label: '张鑫旭博客', href: 'https://www.zhangxinxu.com/' }],
+          items: [{ label: '张鑫旭博客', href: 'https://www.zhangxinxu.com/' }]
         },
         {
           title: '文档',
           items: [
             {
               label: '文档1',
-              to: '/docs/document1',
-            },
-          ],
+              to: '/docs/document1'
+            }
+          ]
         },
         {
           title: '更多',
           items: [
             {
               label: '博客',
-              to: '/blog',
+              to: '/blog'
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/lucodestation/luxiansheng',
-            },
-          ],
-        },
+              href: 'https://github.com/lucodestation/luxiansheng'
+            }
+          ]
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Powered by <a href="https://docusaurus.io/zh-CN/" target="_blank">Docusaurus</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} Powered by <a href="https://docusaurus.io/zh-CN/" target="_blank">Docusaurus</a>`
     },
     prism: {
       theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
-    },
+      darkTheme: darkCodeTheme
+    }
   },
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en', 'zh']
+      }
+    ]
+  ],
+
   // 自定义配置
-  customFields: {},
+  customFields: {}
 };
