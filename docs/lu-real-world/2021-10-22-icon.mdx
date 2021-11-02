@@ -1,0 +1,47 @@
+---
+title: 图标
+authors: luzhongwei
+tags: [api, real word]
+---
+
+<link
+  href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+## 使用示例
+
+```html
+<i class="ion-load-a"></i>
+```
+
+:::tip 提示
+
+如需搜索图标，请使用按 <kbd>Ctrl</kbd> + <kbd>F</kbd> 进行本页搜索。
+
+如搜索加载图标，搜索 `ion-load` 。
+
+如果图标没显示出来，请多等几秒，等字体文件下载完就显示了。
+
+:::
+
+## 图标列表
+
+import './icon.css';
+import icons from './icon.json';
+
+export const Highlight = () => {
+  console.log(icons.length);
+  const span = icons.map((item, index) => {
+    return (
+      <span key={index}>
+        <i className={item}></i>
+        <b>{item}</b>
+      </span>
+    );
+  });
+  return <div className="icon-wrap">{span}</div>;
+};
+
+<Highlight></Highlight>
