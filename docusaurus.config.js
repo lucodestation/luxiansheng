@@ -144,5 +144,6 @@ module.exports = {
   ],
 
   // 自定义配置
-  customFields: {}
+  customFields: {},
+  themes: ['@docusaurus/theme-live-codeblock']
 };
