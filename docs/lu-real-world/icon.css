@@ -1,0 +1,21 @@
+.icon-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.icon-wrap span {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  width: 200px;
+  /* height: 90px; */
+  text-align: center;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+.icon-wrap i {
+  font-size: 32px;
+}
+.icon-wrap b {
+  font-weight: normal;
+}
