@@ -28,8 +28,6 @@ const arr10 = Array(3).fill('foo'); // ['foo', 'foo', 'foo']
 `fill(value, start, end)`
 
 ```js live
-// 这里的代码可实时编辑
-
 function () {
   const arr = Array(8);
 

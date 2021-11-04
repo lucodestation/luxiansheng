@@ -7,8 +7,6 @@ tags: [JavaScript, String]
 要将一个值转换为字符串可以使用 `Number()` 函数或使用几乎所有值都有的 `toString()` 方法。但最常用方法是用这个值加上一个空字符串。
 
 ```js live
-// 这里的代码可实时编辑
-
 function () {
   const a = 32;
   return (<div>
