@@ -16,12 +16,7 @@ tags: [CSS, 点点点, 省略号]
 ```
 
 ```jsx live
-<style>
-.box {
-  color: red;
-}
-</style>
-<div class="box" style={{
+<div style={{
   width: '170px',
   overflow: 'hidden',
   whiteSpace: 'nowrap',
