@@ -1,7 +1,7 @@
 ---
-title: 使用路径别名
+title: Vite 项目使用路径别名并在 VSCode 中显示路径提示
 authors: luzhongwei
-tags: [编辑器, VSCode, Vue, path, 路径, alias, 别名]
+tags: [编辑器, VSCode, Vue, path, 路径, alias, 别名, Vite, 路径提示]
 ---
 
 安装 Path Intellisense 扩展
