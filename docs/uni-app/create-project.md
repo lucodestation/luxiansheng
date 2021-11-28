@@ -19,6 +19,7 @@ tags: [uni-app]
 ### Git 中忽略 `.DS_Store` 文件和 `unpackage` 目录
 
 首先在项目根目录中创建 `.gitignore` 文件，然后在 `.gitignore` 文件中输入如下内容
+
 ```
 .DS_Store
 unpackage/
@@ -26,13 +27,13 @@ unpackage/
 
 ## 运行到微信开发者工具
 
-要想查看微信小程序运行效果，必须将项目运行到[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)。
+要想查看[微信小程序](https://mp.weixin.qq.com/cgi-bin/wx)运行效果，必须将项目运行到[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)。
 
 首先需要在微信开发者工具中开启*服务端口*
 
 ![开启服务端口](./images/开启服务端口.png)
 
-然后在 HBuilderX 中选择 *运行* > *运行到小程序模拟器* > *微信开发者工具*
+然后在 HBuilderX 中选择 _运行_ > _运行到小程序模拟器_ > _微信开发者工具_
 
 ![运行到微信开发者工具](./images/运行到微信开发者工具.png)
 

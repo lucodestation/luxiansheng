@@ -26,3 +26,10 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.tabs__item.tabs__item--active {
+  background-color: var(--ifm-tabs-color-active);
+  border: 0;
+  border-radius: var(--ifm-global-radius);
+  color: #fff;
+}
