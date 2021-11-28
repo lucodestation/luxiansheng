@@ -44,7 +44,7 @@ const showToastWait = (title, duration = 1500) => {
     uni.showToast({
       title,
       icon: 'none',
-      duration: duration,
+      duration,
       success() {
         setTimeout(() => {
           resolve();

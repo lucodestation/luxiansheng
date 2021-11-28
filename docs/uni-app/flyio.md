@@ -22,7 +22,7 @@ Fly.js 是一个支持所有 JavaScript 运行环境的基于 Promise 的、支�
 import Fly from 'flyio/dist/npm/wx';
 const fly = new Fly();
 /* 
-全局配置
+实例级配置
 
 fly.config 默认值
 
@@ -36,7 +36,7 @@ fly.config = {
   withCredentials: false
 }
  */
-// 全局配置
+// 实例级配置
 fly.config.baseURL = 'https://api.github.com';
 
 // 请求拦截器
@@ -74,7 +74,7 @@ fly
     // 如果是 GET 请求，data 将作为查询字符串。
     // 如果是 POST 请求，data 将作为请求中的 body。
     data,
-    // options 将会和请求拦截器中的 request 合并
+    // 单次请求配置。options 将会和请求拦截器中的 request 合并
     options
   )
   .then((result) => {
