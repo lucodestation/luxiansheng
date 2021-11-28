@@ -6,6 +6,8 @@ tags: [编辑器, VSCode, Vue, path, 路径, alias, 别名, Vite, 路径提示]
 
 安装 Path Intellisense 扩展
 
+<!--truncate-->
+
 VSCode 设置中添加
 
 ```json title="settings.json"
