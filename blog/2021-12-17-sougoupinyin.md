@@ -1,4 +1,8 @@
-# 搜狗拼音输入法
+---
+title: 搜狗拼音输入法
+authors: luzhongwei
+tags: [搜狗, 拼音, 输入法]
+---
 
 > 使用环境
 >
@@ -20,7 +24,7 @@
 - 状态栏右键 > 定制状态栏。
 - 仅保留**中/英文**、**全/半角**、**中/英文标点**。
 
-![状态栏](./sougoupinyin/status-bar.png)
+![状态栏](./2021-10-13-sougoupinyin/status-bar.png)
 
 ## 设置
 
@@ -42,7 +46,7 @@
 - 点击**输入法管理器**。
 - 将光标定位到**搜狗输入法快捷键**后的输入框里，按 <kbd>Shift</kbd> + <kbd>, </kbd> 。
 
-![设置默认输入法和切换到搜狗输入法快捷键](./sougoupinyin/set-default.png)
+![设置默认输入法和切换到搜狗输入法快捷键](./2021-10-13-sougoupinyin/set-default.png)
 
 ### 其他设置
 
