@@ -4,13 +4,13 @@ title: String
 tags: [JavaScript, String]
 ---
 
-要将一个值转换为字符串可以使用 `Number()` 函数或使用几乎所有值都有的 `toString()` 方法。但最常用方法是用这个值加上一个空字符串。
+要将一个值转换为字符串可以使用 `String()` 函数或使用几乎所有值都有的 `toString()` 方法。但最常用方法是用这个值加上一个空字符串。
 
 ```js live
 function () {
   const a = 32;
   return (<div>
-    <p>{ Number(a)    }</p>
+    <p>{ String(a)    }</p>
     <p>{ a.toString() }</p>
     <p>{ a + ''       }</p>
   </div>);
@@ -166,6 +166,7 @@ function () {
   </div>);
 }
 ```
+
 ## 大小写转换
 
 `String.prototype.toLowerCase()` 转换为小写。
@@ -191,14 +192,14 @@ const str = '1, 2, 3';
 
 console.log([...str]); // ['1', ',', ' ', '2', ',', ' ', '3']
 
-console.log(str.split(', ')) // ['1', '2', '3']
+console.log(str.split(', ')); // ['1', '2', '3']
 
 // 指定返回数组的长度
-console.log(str.split(', ', 2)) // ['1', '2']
+console.log(str.split(', ', 2)); // ['1', '2']
 ```
 
 > `split()` 第一个参数还支持正则表达式。
-> 
+>
 > 字符串可以使用 `for of` 进行迭代。
 
 ## 模式匹配
